@@ -25,7 +25,7 @@ app.get("/staticfile", (reqest, response) => {
 })
 
 app.get("/drinks", (request, response) => {
-    response.sendFile("/Users/rickycary/SEI/deliverables/unit2/Git-Pub/models/drinks.js")
+    response.render("/Users/rickycary/SEI/deliverables/unit2/Git-Pub/views/index.ejs")
 })
 
 app.get("/template", (request, response) => {
