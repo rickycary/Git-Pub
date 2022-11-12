@@ -20,6 +20,16 @@ router.get("/", (request, response) => {
 })
 
 //===================
+// Show Route
+//===================
+router.get('/:id', (request, response) => {
+    response.render('drinks/show.ejs', {
+        drinks: drinks.getOne(request.params.id)
+    })
+})
+
+
+//===================
 // Export the router
 //===================
 module.exports = router
