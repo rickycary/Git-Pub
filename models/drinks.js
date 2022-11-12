@@ -1,4 +1,5 @@
-const drinks = [
+const drinks = {
+  data: [
     {
       name: 'cruddy mary',
       price: 132,
@@ -38,5 +39,15 @@ const drinks = [
       name: 'node to joy',
       price: 56,
       image: 'https://i.imgur.com/MbVdwZz.jpg'
+    },
+  ], 
+    getAll: function(){
+      return this.data
+    },
+    getOne: function(index){
+      return this.data[index]
     }
-  ]
+}
+
+
+  module.exports = drinks
