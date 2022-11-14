@@ -7,7 +7,9 @@ const router = express.Router()
 
 // Register routes w/ the router
 router.get('/', (request, response) => {
-    response.send("Food")
+    response.render("foods/index.ejs", {
+        foods: food.getAll()
+    })
 })
 
 // Export Router 
