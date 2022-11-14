@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +15,6 @@
         <% drinks.forEach((drink, index) => { %>
         
             <a href="/drinks/<%= index %>"><li><%= drink.name.charAt(0).toUpperCase() + drink.name.slice(1) %></li></a>
-
         <% }) %>
     </ul>
 
