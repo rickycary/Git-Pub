@@ -1,9 +1,40 @@
-<h1>List of Foods</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1>Welcome to gitPub</h1>
 
-<ul>
-    <% foods.forEach((food) => { %>
+    <ul>
+        <% foods.forEach((food, index) => { %>
+    
+            <a href="/foods/<%= index %>"><li><%= food.name %> </li></a>
+    
+       <% }) %>
+<br>
+       <a href="/drinks/">Drinks Menu</a>
 
-        <h1><%= food.name %> </h1>
 
-   <% }) %>
-</ul>
+    </ul>
+
+    <style type="text/css">
+        body {
+            color: blanchedalmond;
+            background-color: steelblue;
+            display: block;
+            margin: auto;
+            width: 50%;
+
+}
+
+</style>
+
+
+    
+</body>
+</html>
